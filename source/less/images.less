@@ -1,0 +1,184 @@
+.images{
+	display: flex;
+	position: relative;
+
+
+	&__folder{
+		position: absolute;
+		left:-240px;
+		top:70px;
+		z-index: 0;
+
+		
+	}
+
+	&__folder-img{
+		position: relative;
+		z-index: 2;
+			width: 100%;
+		}
+
+	&__paper{
+		position: relative;
+		top:-68px;
+		left:60px;
+		z-index: 4;
+		margin-left: auto;
+
+		&:after{
+			content: "";
+
+			position: absolute;
+			width: 539px;
+			height: 245px;
+			top:600px;
+			left: 110px;
+			background-image: url(../images/folio.png);
+		}
+
+		&:after{
+			content: url();
+
+		}
+
+		&-img{
+			overflow: hidden;
+		position: relative;
+		z-index: 2;
+
+		}
+	}
+}
+
+// #arrow{
+// 	position: absolute;
+// 	fill:#199C68;
+// 	transform: rotate(-90deg);
+// 	width: 200px;
+// 	height: 100px;
+// 	bottom: 100px;
+// 	left: 160px;
+// 	z-index: 5;
+// 	opacity: 0.5;
+// }
+
+@media (max-width:@desktop)  {
+	.images{
+
+		&__folder{
+			left:-340px;
+			top:20px;
+		}
+
+		&__paper{
+			position: relative;
+			top:-68px;
+			left:140px;
+			z-index: 4;
+			margin-left: auto;
+			
+			&:after{
+				transform: scale(0.7);
+				top:610px;
+				left: 100px;
+			}
+			&-img{
+			}
+		}
+	}
+
+	
+}
+
+
+
+@media (max-width:@tablet)  {
+	.images{
+
+		flex-direction: column;
+		&__folder{
+			top:-10px;
+			transform: scale(0.55);
+		}
+
+		&__paper{
+			width: 400px;
+			position: relative;
+			top:40px;
+			left:0px;
+			z-index: 4;git push -u origin master
+			margin-left:auto;
+
+			&:after{
+				top:390px;
+				left: -60px;
+			}
+
+			&-img{
+				width: 100%;
+			}
+		}
+	}
+	#arrow{
+		width: 170px;
+		height: 80px;
+		bottom: 60px;
+		left: 105px;
+	}
+}
+
+@media (max-width:520px)  {
+	.images{
+
+		&__folder{
+			display: none;
+		}
+
+		&__paper{
+			
+			margin:0 auto;
+
+			&:after{
+				top:390px;
+				left: -40px;
+			}
+		}
+	}
+}
+
+@media (max-width:424px)  {
+	.images{
+
+		&__folder{
+			display: none;
+		}
+
+		&__paper{
+			width: 300px;
+			position: relative;
+			top:40px;
+			left:10px;
+			z-index: 4;
+			margin: 0 auto;
+
+			&:after{
+
+				transform: scale(0.4);
+				content: "";
+				top:273px;
+				left: -90px;
+			}
+
+			&-img{
+				width: 100%;
+			}
+		}
+	}	
+
+	#arrow{
+		width: 140px;
+		height: 55px;
+		bottom: 40px;
+		left: 73px;
+	}
+}

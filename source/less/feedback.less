@@ -1,0 +1,154 @@
+.vijet-sc{
+			height: 500px;
+		}
+
+.109{
+	height: 373px !important;
+}
+
+.feedback{
+	position: relative;
+	transform: scale(0.86);
+	&__vidjet{
+		width: 330px;
+		position: absolute;
+		z-index: 6;
+		top:137px;
+		right:130px;
+
+
+	}
+
+	&__title{
+		margin-bottom:3px;
+		font-size: 24px;
+		line-height: 28px;
+
+		& .italic{
+			font-family: "Georgia", serif;
+			font-weight: 500;
+		}
+	}
+
+	&__input{
+		margin-top: 30px;
+	}
+
+	&__btn{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	&__label{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 11px;
+		line-height: 18px;
+	}
+
+	&__link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 11px;
+		line-height: 18px;
+		color: #1eaccc;
+	}
+
+	&__descr{
+		position: absolute;
+		z-index: 0;
+		top: 262px;
+		left: -184px;
+		background-image: url(../images/bookmark.png);
+		background-size: cover;
+		width: 248px;
+		height: 263px;
+		padding: 43px 46px 43px 34px;
+		font-size: 14px;
+		line-height: 24px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+
+		& .strong{
+			font-style: italic;
+			font-size: 22px;
+			line-height: 30px;
+			font-weight: 700;
+		}
+	}
+
+}
+
+@media (max-width:1439px)  {
+	.feedback{
+		transform: scale(0.7);
+	}
+}
+
+@media (max-width:@desktop)  {
+	.feedback{
+		transform: scale(0.7);
+		top:-80px;
+	}
+}
+
+@media (max-width:@tablet)  {
+	.feedback{
+		position: relative;
+		transform: scale(1);
+		&__vidjet{
+			transform: scale(0.80);
+			top:60px;
+			right:50px;
+		}
+
+		&__title{
+			font-size: 20px;
+			line-height: 24px;
+		}
+
+
+		&__descr{
+			display: block;
+			top: 110px;
+			left: -155px;
+			transform: scale(0.65);
+			padding: 43px 46px 43px 20px;
+			& .strong{
+				font-style: italic;
+				font-size: 22px;
+				line-height: 30px;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+@media (max-width:520px)  {
+	.feedback{
+		&__descr{
+			display: none;
+		}
+
+		&__vidjet{
+			
+			top:60px;
+			right:45px;
+		}
+	}
+}
+
+@media (max-width:424px)  {
+	.feedback{
+		&__vidjet{
+			transform: scale(0.60);
+			top:-30px;
+			right:-5px;
+		}
+
+		
+
+	}
+}
+
+
